@@ -1,0 +1,14 @@
+---
+ - name: run for lambda
+   hosts: localhost
+   remote_user: ec2-user
+   become: yes
+
+   tasks: 
+
+
+    - execute_lambda:
+        function_arn: arn:aws:lambda:ap-south-1:615817570482:function:testjenkins
+        payload:
+          foo: servername
+          value: i-09058d9f4d9914925
