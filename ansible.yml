@@ -1,4 +1,0 @@
----
-
-- community.aws.execute_lambda:
-    function_arn: arn:aws:lambda:ap-south-1:615817570482:function:testjenkins
